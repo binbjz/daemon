@@ -2,7 +2,10 @@
 # filename: DaemonPy.py
 #
 
-import sys, os, time, atexit
+import os
+import sys
+import time
+import atexit
 from signal import SIGTERM
 
 
