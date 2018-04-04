@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# filename: DaemonPy.py
+# filename: DaemonP.py
 #
 
 import os
