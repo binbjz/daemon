@@ -42,9 +42,9 @@ class Daemon(object):
         # Redirect file descriptor
         sys.stdout.flush()
         sys.stderr.flush()
-        si = open(self.stdin, 'r')
-        so = open(self.stdout, 'a+')
-        se = open(self.stderr, 'ab+', 0)
+        si = open(self.stdin, 'rb', 0)
+        so = open(self.stdout, 'ab', 0)
+        se = open(self.stderr, 'ab', 0)
         os.dup2(si.fileno(), sys.stdin.fileno())
         os.dup2(so.fileno(), sys.stdout.fileno())
         os.dup2(se.fileno(), sys.stderr.fileno())
