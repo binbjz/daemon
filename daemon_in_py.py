@@ -6,7 +6,7 @@ import sys, os, time, atexit, string
 from signal import SIGTERM
 
 
-class Daemon:
+class Daemon(object):
   def __init__(self, pidfile, stdin='/dev/null', stdout='/dev/null', stderr='/dev/null'):
   #Need for debugging information to change: stdin='/dev/stdin', stdout='/dev/stdout', stderr='/dev/stderr', running it as super user root
     self.stdin = stdin
