@@ -105,7 +105,6 @@ if __name__ == '__main__':
 
     if sys.argv[1] == 'start':
         daemon.start()
-
     elif sys.argv[1] == 'stop':
         daemon.stop()
     elif sys.argv[1] == 'restart':
